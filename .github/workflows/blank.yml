@@ -1,7 +1,7 @@
 name: Build & Deploy to Digital Ocean
 on:
   push:
-    branches: [master]
+    branches: [main]
     
 jobs:
   deploy:
@@ -18,3 +18,5 @@ jobs:
           cd ../home/actions-test
           git pull
           echo 'Successfully pulled form repo'
+          yarn install
+          echo 'installed dependencies'
