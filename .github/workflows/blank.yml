@@ -17,6 +17,6 @@ jobs:
         script: |
           cd ../home/actions-test
           git pull
-          echo 'Successfully pulled form repo'
+          echo 'pulled form repo'
           yarn install
           echo 'installed dependencies'
